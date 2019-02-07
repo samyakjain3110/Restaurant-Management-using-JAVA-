@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Pane layoutX="102.0" layoutY="13.0" prefHeight="72.0" prefWidth="572.0">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="9.0" prefHeight="55.0" prefWidth="554.0" text="SHREE KRISHNA RESTAURANT" textFill="#bf1111">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Glow />
+         </effect>
+      </Pane>
+      <TabPane layoutX="22.0" layoutY="70.0" prefHeight="405.0" prefWidth="740.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="SNACKS">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="29.0" layoutY="29.0" prefHeight="35.0" prefWidth="116.0" text="BURGERS">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="88.0" prefHeight="30.0" prefWidth="100.0" text="VEG BURGER" />
+                        <Separator layoutX="353.0" layoutY="5.0" orientation="VERTICAL" prefHeight="366.0" prefWidth="47.0" />
+                        <Label layoutX="29.0" layoutY="146.0" prefHeight="30.0" prefWidth="100.0" text="CHICKEN BURGER" />
+                        <Label layoutX="29.0" layoutY="258.0" prefHeight="30.0" prefWidth="100.0" text="SPECIAL BURGER" />
+                        <Label layoutX="29.0" layoutY="200.0" prefHeight="30.0" prefWidth="100.0" text="JUMBO BURGER" />
+                        <TextField fx:id="txtburger1" layoutX="276.0" layoutY="91.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtburger2" layoutX="274.0" layoutY="150.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtburger3" layoutX="276.0" layoutY="202.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtburger4" layoutX="274.0" layoutY="261.0" prefHeight="25.0" prefWidth="50.0" />
+                        <Label layoutX="399.0" layoutY="258.0" prefHeight="30.0" prefWidth="112.0" text="SPECIAL SANDWICH" />
+                        <Label layoutX="400.0" layoutY="200.0" prefHeight="30.0" prefWidth="110.0" text="PANEER SANDWICH" />
+                        <Label layoutX="400.0" layoutY="147.0" prefHeight="30.0" prefWidth="110.0" text="GRILLED SANDWICH" />
+                        <Label layoutX="400.0" layoutY="88.0" prefHeight="30.0" prefWidth="110.0" text="CHEESE SANDWICH" />
+                        <TextField fx:id="txtsandwich4" layoutX="651.0" layoutY="261.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtsandwich3" layoutX="651.0" layoutY="203.0" prefWidth="50.0" />
+                        <TextField fx:id="txtsandwich2" layoutX="651.0" layoutY="149.0" prefWidth="50.0" />
+                        <TextField fx:id="txtsandwich1" layoutX="651.0" layoutY="91.0" prefHeight="25.0" prefWidth="50.0" />
+                        <Label layoutX="400.0" layoutY="29.0" prefHeight="35.0" prefWidth="175.0" text="SANDWICH">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="142.0" layoutY="91.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Separator layoutX="254.0" layoutY="91.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Separator layoutX="16.0" layoutY="319.0" prefHeight="4.0" prefWidth="319.0" />
+                        <Separator layoutX="405.0" layoutY="318.0" prefHeight="4.0" prefWidth="304.0" />
+                        <Separator layoutX="620.0" layoutY="88.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Separator layoutX="519.0" layoutY="77.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Label fx:id="lblburger1" layoutX="180.0" layoutY="95.0" prefHeight="30.0" prefWidth="50.0" text="30" />
+                        <Label fx:id="lblsandwich3" layoutX="555.0" layoutY="207.0" text="30" />
+                        <Label fx:id="lblsandwich2" layoutX="554.0" layoutY="153.0" text="30" />
+                        <Label fx:id="lblsandwich1" layoutX="554.0" layoutY="95.0" text="25" />
+                        <Label fx:id="lblburger4" layoutX="182.0" layoutY="265.0" text="60" />
+                        <Label fx:id="lblburger3" layoutX="180.0" layoutY="206.0" text="50" />
+                        <Label fx:id="lblburger2" layoutX="180.0" layoutY="153.0" text="40" />
+                        <Label fx:id="lblsandwich4" layoutX="554.0" layoutY="265.0" text="50" />
+                        <Label fx:id="lblsandwichtotal" layoutX="647.0" layoutY="337.0" prefHeight="25.0" prefWidth="58.0" text="AMOUNT" />
+                        <Label fx:id="lblburgertotal" layoutX="270.0" layoutY="337.0" prefHeight="25.0" prefWidth="58.0" text="AMOUNT" />
+                        <Button layoutX="35.0" layoutY="337.0" mnemonicParsing="false" onAction="#burgersubtotal" text="CALC SUBTOTAL" />
+                        <Button layoutX="403.0" layoutY="337.0" mnemonicParsing="false" onAction="#sandwichsubtotal" text="CALC SUBTOTAL" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="SOFT DRINKS">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+           
+            <children>
+                        <Label layoutX="29.0" layoutY="29.0" prefHeight="35.0" prefWidth="157.0" text="COLD DRINK">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblvegburger" layoutX="29.0" layoutY="88.0" prefHeight="30.0" prefWidth="100.0" text="MOUNTAIN DEW" />
+                        <Separator layoutX="353.0" layoutY="5.0" orientation="VERTICAL" prefHeight="366.0" prefWidth="47.0" />
+                        <Label layoutX="29.0" layoutY="201.0" prefHeight="30.0" prefWidth="100.0" text="PEPSI" />
+                        <Label layoutX="29.0" layoutY="258.0" prefHeight="30.0" prefWidth="100.0" text="LIMCA" />
+                        <Label layoutX="29.0" layoutY="147.0" prefHeight="30.0" prefWidth="100.0" text="COCA - COLA" />
+                        <TextField fx:id="txtdrink1" layoutX="274.0" layoutY="91.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtdrink2" layoutX="274.0" layoutY="149.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtdrink3" layoutX="276.0" layoutY="202.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtdrink4" layoutX="274.0" layoutY="261.0" prefHeight="25.0" prefWidth="50.0" />
+                        <Label layoutX="399.0" layoutY="258.0" prefHeight="30.0" prefWidth="112.0" text="BANANA" />
+                        <Label layoutX="400.0" layoutY="200.0" prefHeight="30.0" prefWidth="110.0" text="OREO" />
+                        <Label layoutX="400.0" layoutY="147.0" prefHeight="30.0" prefWidth="110.0" text="BUTTERSCOTCH" />
+                        <Label layoutX="400.0" layoutY="88.0" prefHeight="30.0" prefWidth="110.0" text="CHOCOLATE" />
+                        <TextField fx:id="txtsmoothie4" layoutX="651.0" layoutY="261.0" prefHeight="25.0" prefWidth="50.0" />
+                        <TextField fx:id="txtsmoothie3" layoutX="651.0" layoutY="203.0" prefWidth="50.0" />
+                        <TextField fx:id="txtsmoothie2" layoutX="651.0" layoutY="149.0" prefWidth="50.0" />
+                        <TextField fx:id="txtsmoothie1" layoutX="651.0" layoutY="91.0" prefHeight="25.0" prefWidth="50.0" />
+                        <Label layoutX="400.0" layoutY="29.0" prefHeight="35.0" prefWidth="175.0" text="SHAKES">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="142.0" layoutY="91.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Separator layoutX="254.0" layoutY="91.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Separator layoutX="16.0" layoutY="319.0" prefHeight="4.0" prefWidth="319.0" />
+                        <Separator layoutX="405.0" layoutY="318.0" prefHeight="4.0" prefWidth="304.0" />
+                        <Separator layoutX="620.0" layoutY="88.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Separator layoutX="519.0" layoutY="77.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Label fx:id="lbldrink1" layoutX="180.0" layoutY="95.0" text="30" />
+                        <Label fx:id="lblsmoothie3" layoutX="555.0" layoutY="207.0" text="100" />
+                        <Label fx:id="lblsmoothie2" layoutX="554.0" layoutY="153.0" text="50" />
+                        <Label fx:id="lblsmoothie1" layoutX="554.0" layoutY="95.0" text="55" />
+                        <Label fx:id="lbldrink4" layoutX="180.0" layoutY="265.0" text="30" />
+                        <Label fx:id="lbldrink3" layoutX="180.0" layoutY="206.0" text="30" />
+                        <Label fx:id="lbldrink2" layoutX="180.0" layoutY="153.0" text="30" />
+                        <Label fx:id="lblsmoothie4" layoutX="554.0" layoutY="265.0" text="70" />
+                        <Label fx:id="lbldrinktotal" layoutX="274.0" layoutY="335.0" prefHeight="25.0" prefWidth="58.0" text="AMOUNT" />
+                        <Label fx:id="lblsmoothietotal" layoutX="637.0" layoutY="335.0" prefHeight="24.0" prefWidth="61.0" text="AMOUNT" />
+                        <Button layoutX="27.0" layoutY="331.0" mnemonicParsing="false" onAction="#drinkssubtotal" text="CALC SUBTOTAL" />
+                        <Button layoutX="403.0" layoutY="335.0" mnemonicParsing="false" onAction="#smoothiesubtotal" text="CALC SUBTOTAL" />
+                     </children></AnchorPane>
+           
+            </content>
+          </Tab>
+           <Tab text="GET RECEIPT">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="15.0" layoutY="16.0" prefHeight="344.0" prefWidth="710.0">
+                           <children>
+                              <Label layoutX="53.0" layoutY="32.0" prefHeight="30.0" prefWidth="70.0" text="BURGERS" />
+                              <Label layoutX="53.0" layoutY="76.0" prefHeight="30.0" prefWidth="70.0" text="SANDWICH" />
+                              <Label layoutX="53.0" layoutY="124.0" prefHeight="30.0" prefWidth="70.0" text="COLD DRINK" />
+                              <Label layoutX="53.0" layoutY="172.0" prefHeight="30.0" prefWidth="70.0" text="SMOTHIE" />
+                              <Label layoutX="18.0" layoutY="294.0" prefHeight="35.0" prefWidth="182.0" text="TOTAL AMOUNT">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="352.0" layoutY="27.0" orientation="VERTICAL" prefHeight="288.0" prefWidth="5.0" />
+                              <ImageView fitHeight="149.0" fitWidth="223.0" layoutX="419.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../Pictures/Saved%20Pictures/images.png" />
+                                 </image></ImageView>
+                              <Label layoutX="419.0" layoutY="195.0" prefHeight="46.0" prefWidth="244.0" text="COME AGAIN !!!" textFill="#cd0b0b">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblsmoothieamount" layoutX="203.0" layoutY="172.0" prefHeight="30.0" prefWidth="70.0" text="AMOUNT" />
+                              <Label fx:id="lbldrinkamount" layoutX="203.0" layoutY="124.0" prefHeight="30.0" prefWidth="70.0" text="AMOUNT" />
+                              <Label fx:id="lblsandwichamount" layoutX="203.0" layoutY="76.0" prefHeight="30.0" prefWidth="70.0" text="AMOUNT" />
+                              <Label fx:id="lblburgeramount" layoutX="203.0" layoutY="32.0" prefHeight="30.0" prefWidth="70.0" text="AMOUNT" />
+                              <Label fx:id="lbltotalamount" layoutX="222.0" layoutY="294.0" prefHeight="35.0" prefWidth="103.0" text="AMOUNT">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="14.0" layoutY="281.0" prefHeight="0.0" prefWidth="319.0" />
+                              <Button layoutX="417.0" layoutY="272.0" mnemonicParsing="false" onAction="#getreceipt" prefHeight="45.0" prefWidth="231.0" text="GET RECEIPT">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+         <effect>
+            <Lighting specularConstant="0.11" specularExponent="6.98" surfaceScale="0.1">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="187.33" elevation="62.79" />
+               </light>
+            </Lighting>
+         </effect>
+      </TabPane>
+      <Button layoutX="31.0" layoutY="24.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="94.0" text="RESET" />
+   </children>
+</AnchorPane>
